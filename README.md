@@ -1,6 +1,10 @@
 # Smore 
 Smore is a gruvbox theme created for hugo. I use this theme on my personal site but have put it here for anyone to take advantage of!
-![](Pasted%20image%2020221228201154.png)
+
+![Pasted image 20221228201132](https://user-images.githubusercontent.com/19278569/209893757-566cee20-8838-4f80-bb03-366c96b87d15.png)
+
+
+
 - Site Demo - https://grahamhelton.com
 
 ---
@@ -36,7 +40,8 @@ Adding the following to your config.toml will enable syntax highlighting for you
 
 
 ```
-![](Pasted%20image%2020221228201622.png)
+![Pasted image 20221228201622](https://user-images.githubusercontent.com/19278569/209893775-0e62c6fe-501e-4c20-ae5e-61dedf331268.png)
+
 
 
 ## How to install
