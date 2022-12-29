@@ -17,8 +17,7 @@ Smore is a gruvbox theme created for hugo. I use this theme on my personal site 
 
 
 #### Code highlighting
-Adding the following to your config.toml will enable syntax highlighting for your code. You can browse the supported themes [here)(https://github.com/alecthomas/chroma/tree/master/styles).
-
+Adding the following to your config.toml will enable syntax highlighting for your code. You can browse the supported themes [Here](https://github.com/alecthomas/chroma/tree/master/styles)
 
 ```bash
 [markup]
