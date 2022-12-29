@@ -1,12 +1,12 @@
 # Smore 
-Smore is a gruvbox theme created for hugo. I use this theme on my personal site but have put it here for anyone to take advantage of!
+Smore is a gruvbox theme created for hugo. I use this theme on my personal site but have put it here for anyone to take advantage of! 
 ![image](https://user-images.githubusercontent.com/19278569/209897243-ec1d1554-40e9-4079-8bb9-62ef40e0d181.png)
 
 ![image](https://user-images.githubusercontent.com/19278569/209897278-3b2d2528-59ae-4346-9bc4-1280388f1d07.png)
 
 ![image](https://user-images.githubusercontent.com/19278569/209897360-4b2f5cbe-211b-45c9-93d6-6fdc4df78610.png)
 
-
+I made this template for those looking to quickly spin up a resume site. If you would like to read about why you should have a blog/resume site, you can read my [Post about it](https://grahamhelton.com/blog/infosecblog1/) and my post about [How to set it up](https://grahamhelton.com/blog/infosecblog2/). I will be doing a detailed writeup about how I created this theme soon!
 - Site Demo - https://grahamhelton.com
 
 ---
