@@ -48,7 +48,7 @@ You can download the theme by cloning this repository into your themes folder.
 Ensure you are in your root web directory (The one that contains `config.toml`)
 
 ```bash
-git clone https://github.com/grahamhelton/smore themes/terminal
+git clone https://github.com/grahamhelton/smore themes/smore
 ```
 
 This will clone the repository directly to the `themes/smore` directory.
