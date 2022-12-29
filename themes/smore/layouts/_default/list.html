@@ -1,0 +1,17 @@
+{{ define "main" }}
+<div class="container">
+    <h1> {{ .Title }} </h1>
+        {{ range (.Paginate .RegularPagesRecursive).Pages }}
+        <a href="{{ .Permalink }}"> {{ .PublishDate.Format "January 2, 2006" }} | {{ .Title }}</a>
+        <br>
+        <code>//</code> {{ .Description }} 
+
+        <br>
+        <br>
+
+        {{ end }}
+
+
+</div>
+{{- partial "pagination.html" . -}} 
+{{ end }}

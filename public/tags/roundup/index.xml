@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Roundup on Graham Helton</title>
+    <link>https://grahamhelton.com/tags/roundup/</link>
+    <description>Recent content in Roundup on Graham Helton</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 19 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://grahamhelton.com/tags/roundup/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Weekly Roundup #1: December 12-19th 2021</title>
+      <link>https://grahamhelton.com/roundup/roundup1/</link>
+      <pubDate>Sun, 19 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://grahamhelton.com/roundup/roundup1/</guid>
+      <description>What is this? This is the first of a weekly &amp;ldquo;round up&amp;rdquo; that aims to summarize the security or IT related concepts I have worked on this week during my free time. My goal is to create a footprint for others to follow in if they so desire. When I was first learning the basics of security I struggled to find projects that I could work on to help me learn useful security practices and techniques.</description>
+    </item>
+    
+  </channel>
+</rss>

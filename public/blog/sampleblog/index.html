@@ -1,0 +1,213 @@
+<!DOCTYPE html>  
+<html lang=""><link rel="stylesheet" href="../../css/style.css" type="text/css" media="all" />  
+
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Blog title: researching the XYZ &middot; Graham Helton">
+<meta property="og:description" content="Title Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu sem viverra, blandit justo in, ullamcorper nisl. Aliquam maximus lorem et molestie pretium. In luctus facilisis eros id finibus. Nam ac lectus lacus. Nullam quis egestas risus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce id elit gravida sem gravida sollicitudin. Sed congue nulla elit, id cursus nibh viverra vitae.
+Title In vel sapien a justo condimentum finibus.">
+<meta property="og:url" content="https://grahamhelton.com/blog/sampleblog/">
+<meta property="og:site_name" content="Graham Helton">
+<meta property="og:image" content="">
+<meta property="og:image:secure_url" content="">
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-211014781-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+<meta property="article:published_time" content="2021-12-06T00:00:00Z">
+
+<body><header>  
+    <nav class="navbar" role="navigation">  
+        <div class="navbar__left">  
+            <a href="../../">Graham Helton</a>  
+        </div>  
+        <div class="">  
+            <a href="../../roundup">Roundup</a>  
+            <span class ="nav-item navbar-text mx-1">&emsp;/&emsp;</span>
+            <a href="../../blog">Blogs</a>  
+            <span class ="nav-item navbar-text mx-1">&emsp;/&emsp;</span>
+            <a href="../../tags/">Tags</a>  
+            <span class ="nav-item navbar-text mx-1">&emsp;/&emsp;</span>
+            <a href="../../pages/">Other</a>  
+        </div>  
+    </nav>  
+</header>  
+<main>  
+<section class="section">  
+  <article>  
+    <div class="blog__container">  
+          <h1 class="blog__title">Blog title: researching the XYZ</h1>  
+
+          <p> Short description of post. </p>
+          <p>Published: December 6, 2021</p>
+          <p>Reading Time: 5  minutes <p>
+
+            <div class="blog__details">  
+              <div class="blog__info">  
+              </div>  
+            </div>  
+          <div class="content">  
+            <h1 id="title">Title</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu sem viverra, blandit justo in, ullamcorper nisl. Aliquam maximus lorem et molestie pretium. In luctus facilisis eros id finibus. Nam ac lectus lacus. Nullam quis egestas risus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce id elit gravida sem gravida sollicitudin. Sed congue nulla elit, id cursus nibh viverra vitae.</p>
+<h1 id="title-1">Title</h1>
+<p>In vel sapien a justo condimentum finibus. Fusce non magna a leo suscipit fringilla nec in magna. Vestibulum viverra dapibus magna in placerat. Pellentesque sed sodales ex. Vivamus blandit eu justo ac luctus. Etiam nec tellus molestie, suscipit velit ut, lacinia velit. Quisque libero tellus, hendrerit ac dignissim et, faucibus ac nulla. Vestibulum finibus posuere varius. Maecenas finibus est non egestas aliquet. Cras venenatis metus sed iaculis fermentum. In ipsum dui, sagittis ac augue id, feugiat bibendum dui. Sed pellentesque orci orci, quis mollis massa tempor mattis.</p>
+<div class="highlight"><pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">  1</span><span><span style="color:#928374;font-style:italic">#! /bin/python3.10</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">  2</span><span><span style="color:#fe8019">import</span> re
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">  3</span><span><span style="color:#fe8019">import</span> requests
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">  4</span><span><span style="color:#fe8019">import</span> os
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">  5</span><span><span style="color:#fe8019">from</span> os.path <span style="color:#fe8019">import</span> exists
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">  6</span><span><span style="color:#fe8019">from</span> bs4 <span style="color:#fe8019">import</span> BeautifulSoup
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">  7</span><span><span style="color:#fe8019">from</span> colorama <span style="color:#fe8019">import</span> Fore, Style
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">  8</span><span>company_list <span style="color:#fe8019">=</span> [<span style="color:#b8bb26">&#39;scythe&#39;</span>,<span style="color:#b8bb26">&#39;dragos&#39;</span>]
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">  9</span><span>company_url <span style="color:#fe8019">=</span> {<span style="color:#b8bb26">&#39;scythe&#39;</span>:<span style="color:#b8bb26">&#39;https://www.scythe.io/about/careers&#39;</span>,<span style="color:#b8bb26">&#39;dragos&#39;</span>:<span style="color:#b8bb26">&#39;https://jobs.lever.co/dragos&#39;</span>}
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 10</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 11</span><span><span style="color:#928374;font-style:italic"># Define formatting</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 12</span><span>reset <span style="color:#fe8019">=</span> Style<span style="color:#fe8019">.</span>RESET_ALL
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 13</span><span>green <span style="color:#fe8019">=</span> Fore<span style="color:#fe8019">.</span>GREEN
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 14</span><span>purple <span style="color:#fe8019">=</span> Fore<span style="color:#fe8019">.</span>MAGENTA
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 15</span><span>sep <span style="color:#fe8019">=</span> Fore<span style="color:#fe8019">.</span>BLUE <span style="color:#fe8019">+</span> <span style="color:#b8bb26">&#34;---------------------------&#34;</span> <span style="color:#fe8019">+</span> reset
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 16</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 17</span><span><span style="color:#fe8019">def</span> <span style="color:#fabd2f">get_format</span>(response,company_name):
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 18</span><span>    <span style="color:#b8bb26">&#39;&#39;&#39;Return the HTML attribute needed for each site&#39;&#39;&#39;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 19</span><span>    match company_name:
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 20</span><span>       case <span style="color:#b8bb26">&#34;scythe&#34;</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 21</span><span>            soup <span style="color:#fe8019">=</span> BeautifulSoup(response<span style="color:#fe8019">.</span>text, <span style="color:#b8bb26">&#39;html.parser&#39;</span>)<span style="color:#fe8019">.</span>findAll(<span style="color:#b8bb26">&#34;h3&#34;</span>,attrs<span style="color:#fe8019">=</span>{<span style="color:#b8bb26">&#34;id&#34;</span>: <span style="color:#b8bb26">&#34;w-node-_6a3848d7-bd9c-4061-be22-05d0c32b7a82-c32b7a81&#34;</span>})
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 22</span><span>            <span style="color:#fe8019">return</span> soup
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 23</span><span>       case <span style="color:#b8bb26">&#34;dragos&#34;</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 24</span><span>            soup <span style="color:#fe8019">=</span> BeautifulSoup(response<span style="color:#fe8019">.</span>text, <span style="color:#b8bb26">&#39;html.parser&#39;</span>)<span style="color:#fe8019">.</span>findAll(<span style="color:#b8bb26">&#34;h5&#34;</span>,attrs<span style="color:#fe8019">=</span>{<span style="color:#b8bb26">&#34;data-qa&#34;</span>: <span style="color:#b8bb26">&#34;posting-name&#34;</span>})
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 25</span><span>            <span style="color:#fe8019">return</span> soup
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 26</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 27</span><span><span style="color:#fe8019">def</span> <span style="color:#fabd2f">parse</span>(posting_location,company_name):
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 28</span><span>    <span style="color:#b8bb26">&#39;&#39;&#39;Issue the HTML request for job posting page&#39;&#39;&#39;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 29</span><span>    <span style="color:#928374;font-style:italic"># Issue request to scyhte careers page </span>
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 30</span><span>    response <span style="color:#fe8019">=</span> requests<span style="color:#fe8019">.</span>get(posting_location,company_name)
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 31</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 32</span><span>    <span style="color:#928374;font-style:italic"># Get the format of the specific site to parse</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 33</span><span>    parsed_response <span style="color:#fe8019">=</span> get_format(response,company_name)
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 34</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 35</span><span>    <span style="color:#fe8019">return</span> parsed_response 
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 36</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 37</span><span><span style="color:#fe8019">def</span> <span style="color:#fabd2f">parse_html</span>(html_response):
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 38</span><span>    <span style="color:#b8bb26">&#39;&#39;&#39;Takes list of HTML strings and parses them to contain just the job posting&#39;&#39;&#39;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 39</span><span>    <span style="color:#928374;font-style:italic"># for each job posting</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 40</span><span>    postings_list <span style="color:#fe8019">=</span> []
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 41</span><span>    <span style="color:#fe8019">for</span> i <span style="color:#fe8019">in</span> html_response:
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 42</span><span>        <span style="color:#928374;font-style:italic"># Remove HTML from job posting </span>
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 43</span><span>        postings_list<span style="color:#fe8019">.</span>append(re<span style="color:#fe8019">.</span>sub(<span style="color:#b8bb26">&#39;&lt;[^&lt;]+?&gt;&#39;</span>, <span style="color:#b8bb26">&#39;&#39;</span>, <span style="color:#fabd2f">str</span>(i)))
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 44</span><span>    <span style="color:#fe8019">return</span> postings_list
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 45</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 46</span><span><span style="color:#fe8019">def</span> <span style="color:#fabd2f">get_new</span>(postings_list,old_list,company_name):
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 47</span><span>    <span style="color:#b8bb26">&#39;&#39;&#39;Get the difference in the new job postings and the old ones&#39;&#39;&#39;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 48</span><span>    new_post <span style="color:#fe8019">=</span> <span style="color:#fabd2f">list</span>(<span style="color:#fabd2f">set</span>(postings_list) <span style="color:#fe8019">-</span> <span style="color:#fabd2f">set</span>(old_list)) <span style="color:#fe8019">+</span> <span style="color:#fabd2f">list</span>(<span style="color:#fabd2f">set</span>(old_list) <span style="color:#fe8019">-</span> <span style="color:#fabd2f">set</span>(postings_list)) 
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 49</span><span>    path <span style="color:#fe8019">=</span> <span style="color:#b8bb26">&#39;./data/&#39;</span><span style="color:#fe8019">+</span>company_name 
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 50</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 51</span><span>    <span style="color:#928374;font-style:italic"># Save job posting to file</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 52</span><span>    <span style="color:#fe8019">with</span> <span style="color:#fabd2f">open</span>(path, <span style="color:#b8bb26">&#39;w&#39;</span>) <span style="color:#fe8019">as</span> f:
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 53</span><span>        <span style="color:#fe8019">for</span> listing <span style="color:#fe8019">in</span> postings_list:
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 54</span><span>            f<span style="color:#fe8019">.</span>write(<span style="color:#b8bb26">&#34;</span><span style="color:#b8bb26">%s</span><span style="color:#b8bb26"> </span><span style="color:#b8bb26">\n</span><span style="color:#b8bb26">&#34;</span> <span style="color:#fe8019">%</span> listing)
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 55</span><span>    <span style="color:#fe8019">if</span> new_post:
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 56</span><span>        <span style="color:#fe8019">return</span> company_name,new_post 
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 57</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 58</span><span><span style="color:#fe8019">def</span> <span style="color:#fabd2f">get_old</span>(company_name):
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 59</span><span>    <span style="color:#b8bb26">&#39;&#39;&#39;Get the previous job postings and add them to a list&#39;&#39;&#39;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 60</span><span>    <span style="color:#928374;font-style:italic"># If data file does not exist, create it</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 61</span><span>    path <span style="color:#fe8019">=</span> <span style="color:#b8bb26">&#39;./data/&#39;</span><span style="color:#fe8019">+</span>company_name
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 62</span><span>    <span style="color:#fe8019">if</span> <span style="color:#fe8019">not</span> exists(path):
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 63</span><span>        <span style="color:#fabd2f">open</span>(path, <span style="color:#b8bb26">&#39;a&#39;</span>)<span style="color:#fe8019">.</span>close()
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 64</span><span>    <span style="color:#fe8019">with</span> <span style="color:#fabd2f">open</span>(path) <span style="color:#fe8019">as</span> file:
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 65</span><span>        lines <span style="color:#fe8019">=</span> file<span style="color:#fe8019">.</span>readlines()
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 66</span><span>        old_list <span style="color:#fe8019">=</span> []
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 67</span><span>        <span style="color:#fe8019">for</span> i <span style="color:#fe8019">in</span> lines:
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 68</span><span>            <span style="color:#928374;font-style:italic"># for each job posting, strip out the characters we don&#39;t need </span>
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 69</span><span>            old_list<span style="color:#fe8019">.</span>append(i<span style="color:#fe8019">.</span>rstrip())
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 70</span><span>    <span style="color:#fe8019">return</span> old_list
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 71</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 72</span><span><span style="color:#fe8019">def</span> <span style="color:#fabd2f">print_results</span>(company_name,new_post):
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 73</span><span>    <span style="color:#b8bb26">&#39;&#39;&#39;print the job postings&#39;&#39;&#39;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 74</span><span>    company_name <span style="color:#fe8019">=</span> <span style="color:#fabd2f">str</span>(new_post[<span style="color:#d3869b">0</span>])<span style="color:#fe8019">.</span>upper()
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 75</span><span>    <span style="color:#fabd2f">print</span>(<span style="color:#b8bb26">f</span><span style="color:#b8bb26">&#34;</span><span style="color:#b8bb26">{</span>green<span style="color:#b8bb26">}{</span>company_name<span style="color:#b8bb26">}</span><span style="color:#b8bb26"> has new job postings!&#34;</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 76</span><span>    <span style="color:#fabd2f">print</span>(sep)
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 77</span><span>    new_post <span style="color:#fe8019">=</span> new_post[<span style="color:#d3869b">1</span>:]
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 78</span><span>    job_postings <span style="color:#fe8019">=</span> <span style="color:#fabd2f">list</span>(new_post)
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 79</span><span>    <span style="color:#fe8019">for</span> i <span style="color:#fe8019">in</span> job_postings:
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 80</span><span>        <span style="color:#fabd2f">print</span>(<span style="color:#b8bb26">f</span><span style="color:#b8bb26">&#34;</span><span style="color:#b8bb26">{</span>purple<span style="color:#b8bb26">}</span><span style="color:#b8bb26">&#34;</span>,<span style="color:#fe8019">*</span>i,sep<span style="color:#fe8019">=</span><span style="color:#b8bb26">&#34;</span><span style="color:#b8bb26">\n</span><span style="color:#b8bb26">&#34;</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 81</span><span>    <span style="color:#fabd2f">print</span>(sep)
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 82</span><span>    <span style="color:#fe8019">pass</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 83</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 84</span><span><span style="color:#fe8019">def</span> <span style="color:#fabd2f">select_company</span>():
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 85</span><span>    <span style="color:#b8bb26">&#39;&#39;&#39;Select the company passed in list and then call the function required for that specific job&#39;&#39;&#39;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 86</span><span>    <span style="color:#928374;font-style:italic"># Get the company name from the index number passed in through the function</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 87</span><span>    <span style="color:#fe8019">for</span> company <span style="color:#fe8019">in</span> <span style="color:#fabd2f">range</span>(<span style="color:#fabd2f">len</span>(company_list)):
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 88</span><span>        company_name <span style="color:#fe8019">=</span> <span style="color:#fabd2f">list</span>(company_url<span style="color:#fe8019">.</span>keys())[company]
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 89</span><span>        posting_location <span style="color:#fe8019">=</span> <span style="color:#fabd2f">list</span>(company_url<span style="color:#fe8019">.</span>values())[company]
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 90</span><span>        html_response <span style="color:#fe8019">=</span> parse(posting_location,company_name)
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 91</span><span>        old_list <span style="color:#fe8019">=</span> get_old(company_name)
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 92</span><span>        postings_list <span style="color:#fe8019">=</span> parse_html(html_response)
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 93</span><span>        new_post <span style="color:#fe8019">=</span> get_new(postings_list,old_list,company_name)
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 94</span><span>        <span style="color:#fe8019">if</span> new_post:
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 95</span><span>            print_results(company_name,new_post)
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 96</span><span>        <span style="color:#fe8019">else</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 97</span><span>            <span style="color:#fabd2f">print</span>(<span style="color:#b8bb26">f</span><span style="color:#b8bb26">&#34;</span><span style="color:#b8bb26">{</span>green<span style="color:#b8bb26">}{</span>company_name<span style="color:#b8bb26">}{</span>purple<span style="color:#b8bb26">}</span><span style="color:#b8bb26"> has no new job postings&#34;</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 98</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 99</span><span><span style="color:#fabd2f">print</span>(<span style="color:#b8bb26">f</span><span style="color:#b8bb26">&#34;</span><span style="color:#b8bb26">{</span>green<span style="color:#b8bb26">}</span><span style="color:#b8bb26">Ear2Ground:</span><span style="color:#b8bb26">{</span>purple<span style="color:#b8bb26">}</span><span style="color:#b8bb26"> A Program to help you keep tabs on the job postings of infosec companies&#34;</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">100</span><span><span style="color:#fabd2f">print</span>(sep)
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">101</span><span><span style="color:#fe8019">def</span> <span style="color:#fabd2f">main</span>():
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">102</span><span>    path <span style="color:#fe8019">=</span> <span style="color:#b8bb26">&#39;./data/&#39;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">103</span><span>    <span style="color:#fe8019">if</span> <span style="color:#fe8019">not</span> os<span style="color:#fe8019">.</span>path<span style="color:#fe8019">.</span>exists(path):
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">104</span><span>        os<span style="color:#fe8019">.</span>makedirs(path)
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">105</span><span>    select_company()
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">106</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">107</span><span><span style="color:#fe8019">if</span> __name__ <span style="color:#fe8019">==</span> <span style="color:#b8bb26">&#34;__main__&#34;</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">108</span><span>    main()
+</span></span></code></pre></div><p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc aliquam, urna a ultricies dictum, mi arcu commodo eros, dictum vulputate leo magna ac orci. Quisque ultricies molestie nibh, eget sagittis est commodo ut. Cras fermentum, lectus eu interdum rhoncus, erat tortor aliquam velit, eu iaculis purus ex sed lorem. Nunc maximus nisi eu mauris ultricies, non placerat nisl fringilla. Quisque dignissim tellus enim, ut faucibus diam iaculis sit amet. Aenean vestibulum et nunc tempor elementum. Mauris vel augue id justo tempor euismod. Nunc elementum vulputate ante sit amet pulvinar. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce vitae faucibus lectus.</p>
+<ol>
+<li>This</li>
+<li>Is</li>
+<li>A</li>
+<li>List</li>
+</ol>
+<h2 id="smaller-title-2">Smaller Title 2</h2>
+<ul>
+<li>This</li>
+<li>Is</li>
+<li>Also</li>
+<li>A</li>
+<li>List</li>
+</ul>
+<p>Sed imperdiet metus at porta blandit. Proin aliquet fringilla fringilla. In eu mi tempus, condimentum leo in, fermentum purus. Fusce eget dignissim quam. Nulla faucibus elit vel ligula laoreet tempor. Phasellus sed magna velit. Donec at euismod mi. Cras suscipit interdum ligula.</p>
+<blockquote>
+<p>This is a block quote. Groovy.</p>
+</blockquote>
+<p>In ac euismod diam, quis vehicula tellus. Duis mollis, nulla quis egestas congue, eros enim tempor urna, ac pretium elit mi quis nulla. Nunc id vestibulum felis. Aliquam quis massa at dui posuere mattis. Curabitur fermentum rutrum nisl, nec hendrerit velit vestibulum ut. Donec varius euismod ex, eget lacinia odio scelerisque eget. Cras posuere, massa tincidunt tristique semper, tellus felis porta lorem, eu pulvinar velit lacus sit amet orci. Ut finibus dolor ac lectus tristique, non condimentum justo tristique. Pellentesque consectetur mollis tincidunt. Praesent dapibus, dui sed rhoncus luctus, erat ligula posuere eros, quis ullamcorper justo leo id tellus.</p>
+  
+          </div>  
+        </div>  
+
+  </article>  
+
+
+  
+        </main>
+
+<footer>
+  <div class="footer_class">
+    <p>
+    <a href="https://grahamhelton.com/links" title="Reach out to me">Have Questions? Reach out to me.</a>
+    </p>
+
+  </div>
+</footer>
+</body>  
+</html>
+

@@ -1,0 +1,35 @@
+title = "Your_Site_Name"                
+baseURL = "https://yoursite.com"        
+relativeURLs = true
+theme = "smore"
+enableEmoji = true
+
+# Change me if you use google analytics
+googleAnalytics = "UA-123456789"        
+# Sets the amount of blog posts that appear before creating a new page
+paginate = 15
+
+# Set the parameters for your site
+[params]
+author = "Your Name"
+description = "Site Description"
+# path to a .ico to use as favicon
+favicon = "favicon.ico"  
+
+# Define syntax highlighting
+[markup]
+  [markup.highlight]
+   anchorLineNos = false
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ''
+    hl_inline = false
+    lineAnchors = ''
+    lineNoStart = 1
+    lineNos = true 
+    lineNumbersInTable = false 
+    noClasses = true
+    noHl = false
+	# Syntax style. Choose themes from here
+    style = 'gruvbox'
+    tabWidth = 4

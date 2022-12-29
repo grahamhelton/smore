@@ -1,0 +1,31 @@
+{{ define "main" }}  
+<link rel="stylesheet" href="/css/style.css" type="text/css" media="all" />
+<section class="section">  
+  <article>  
+    <div class="blog__container">  
+          <h1 class="blog__title">{{ .Title }} - Idk how you even got here</h1>  
+            <div class="blog__details">  
+              <div class="blog__info">  
+                <p>   
+                My bad. I guess while you're here, check out my latest blog post: 
+                {{ range ( where .Site.RegularPages "Type" "blog" | first 1 ) }} 
+
+                <a href="{{ .Permalink }}">{{ .Title }}</a>{{end}}
+
+                <br>
+                <p>
+
+                <br>
+                Other than that? I've got nothing for ya. Maybe go outside or something?
+
+                </p>  
+              </div>  
+            </div>  
+          <div class="content">  
+            {{ .Content }}  
+          </div>  
+        </div>  
+  </article>  
+</section>  
+{{ end }}  
+

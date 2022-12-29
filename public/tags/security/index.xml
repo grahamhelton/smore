@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Security on Graham Helton</title>
+    <link>https://grahamhelton.com/tags/security/</link>
+    <description>Recent content in Security on Graham Helton</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 19 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://grahamhelton.com/tags/security/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Weekly Roundup #1: December 12-19th 2021</title>
+      <link>https://grahamhelton.com/roundup/roundup1/</link>
+      <pubDate>Sun, 19 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://grahamhelton.com/roundup/roundup1/</guid>
+      <description>What is this? This is the first of a weekly &amp;ldquo;round up&amp;rdquo; that aims to summarize the security or IT related concepts I have worked on this week during my free time. My goal is to create a footprint for others to follow in if they so desire. When I was first learning the basics of security I struggled to find projects that I could work on to help me learn useful security practices and techniques.</description>
+    </item>
+    
+    <item>
+      <title>Blog title: researching the XYZ</title>
+      <link>https://grahamhelton.com/blog/sampleblog/</link>
+      <pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://grahamhelton.com/blog/sampleblog/</guid>
+      <description>Title Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu sem viverra, blandit justo in, ullamcorper nisl. Aliquam maximus lorem et molestie pretium. In luctus facilisis eros id finibus. Nam ac lectus lacus. Nullam quis egestas risus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce id elit gravida sem gravida sollicitudin. Sed congue nulla elit, id cursus nibh viverra vitae.
+Title In vel sapien a justo condimentum finibus.</description>
+    </item>
+    
+  </channel>
+</rss>

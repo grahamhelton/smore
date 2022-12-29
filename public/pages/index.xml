@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Homepage Title on Graham Helton</title>
+    <link>https://grahamhelton.com/pages/</link>
+    <description>Recent content in Homepage Title on Graham Helton</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 08 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://grahamhelton.com/pages/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Social Links</title>
+      <link>https://grahamhelton.com/pages/links/</link>
+      <pubDate>Sun, 06 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://grahamhelton.com/pages/links/</guid>
+      <description>Social Media Links Email -&amp;gt; your(at)email@provider.com
+Mastodon -&amp;gt; This is where the cool infosec people hang out. :)
+Twitter -&amp;gt; I check my DM&amp;rsquo;s fairly often.
+Linkedin -&amp;gt; I check my DM&amp;rsquo;s everyone once and a while.
+Youtube -&amp;gt; Sometimes I post things that I&amp;rsquo;m working on.
+Blog -&amp;gt; Research and long form content.
+Roundup -&amp;gt; Weekly &amp;ldquo;What have I been working on&amp;rdquo; geared toward helping people see what they can do to get experience without paying for certs/degrees.</description>
+    </item>
+    
+  </channel>
+</rss>
