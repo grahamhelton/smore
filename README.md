@@ -4,6 +4,9 @@ Smore is a gruvbox theme created for hugo. I use this theme on my personal site 
 
 ![image](https://user-images.githubusercontent.com/19278569/209897278-3b2d2528-59ae-4346-9bc4-1280388f1d07.png)
 
+![image](https://user-images.githubusercontent.com/19278569/209897360-4b2f5cbe-211b-45c9-93d6-6fdc4df78610.png)
+
+
 - Site Demo - https://grahamhelton.com
 
 ---
